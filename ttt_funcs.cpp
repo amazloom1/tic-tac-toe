@@ -99,32 +99,32 @@ void greet() {
 }
 
 std::string checkWin(char board[3][3]) {
-  std::string player1 = "Player 1 wins!\n";
-  std::string player2 = "Player 2 wins!\n";
+  std::string player1W = "Player 1 wins!\n";
+  std::string player2W = "Player 2 wins!\n";
   for (int i = 0; i < 3; i++) {
     if (board[i][0] == 'x' && board[i][1] == 'x' && board[i][2] == 'x') {
-      return player1;
+      return player1W;
       break;
     } else if (board[0][i] == 'x' && board[1][i] == 'x' && board[2][i] == 'x') {
-      return player1;
+      return player1W;
       break;
     } else if (board[0][0] == 'x' && board[1][1] == 'x' && board[2][2] == 'x') {
-      return player1;
+      return player1W;
       break;
     } else if (board[0][2] == 'x' && board[1][1] == 'x' && board[2][0] == 'x') {
-      return player1;
+      return player1W;
       break;
     } else if (board[i][0] == 'o' && board[i][1] == 'o' && board[i][2] == 'o') {
-      return player2;
+      return player2W;
       break;
     } else if (board[0][i] == 'o' && board[1][i] == 'o' && board[2][i] == 'o') {
-      return player2;
+      return player2W;
       break;
     } else if (board[0][0] == 'o' && board[1][1] == 'o' && board[2][2] == 'o') {
-      return player2;
+      return player2W;
       break;
     } else if (board[0][2] == 'o' && board[1][1] == 'o' && board[2][0] == 'o') {
-      return player2;
+      return player2W;
       break;
     }
   }
